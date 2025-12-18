@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chronos — Montres Élégantes</title>
+  <meta name="description" content="Découvrez les montres Chronos — élégance, précision et design intemporel." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb" aria-hidden></div>
+
+  <!-- HEADER -->
+  <header class="container">
+    <div class="logo">
+      <img src="images/Chronos.png" alt="Logo Chronos" class="logo-img" />
+      <div>
+        <div class="logo-title">Chronos</div>
+        <div class="logo-subtitle">Montres Élégantes</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#collection" class="scroll-link">Collection</a>
+      <a href="#contact" class="scroll-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>La montre au service de l’élégance.</h1>
+        <p class="lead">Des montres conçues avec précision et passion, pour ceux qui valorisent le style et la qualité.</p>
+        <div class="cta-row">
+          <button class="btn btn-primary scroll-link" data-target="collection">Découvrir</button>
+          <button class="btn btn-ghost scroll-link" data-target="contact">Contact</button>
+        </div>
+      </div>
+      <aside>
+        <img src="images/montre-principale.jpg" alt="Montre principale" class="hero-image" />
+      </aside>
+    </section>
+
+    <!-- COLLECTION -->
+    <section id="collection" class="collection">
+      <h2>Notre Collection</h2>
+      <div class="collection-grid">
+        <div class="watch-card">
+          <img src="images/montre1.webp" alt="Chronos Noire" />
+          <h3>Chronos Noire</h3>
+          <p>Boîtier acier noir mat, cadran profond et bracelet métallique raffiné.</p>
+        </div>
+        <div class="watch-card">
+          <img src="images/montre2.webp" alt="ALB Balade" />
+          <h3>ALB Balade</h3>
+          <p>Design français imprimé en 3D, alliance d’innovation et d’élégance contemporaine.</p>
+        </div>
+        <div class="watch-card">
+          <img src="images/montre3.jpg" alt="Zelos Hammerhead" />
+          <h3>Zelos Hammerhead</h3>
+          <p>Montre de plongée robuste, cadran bleu profond et étanchéité jusqu’à 300 m.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="muted">Une question ou une demande ? Envoyez-nous un message.</p>
+      <form id="contactForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Nom" required />
+          <input type="email" id="email" placeholder="email@exemple.com" required />
+        </div>
+        <textarea id="message" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <div id="status"></div>
+      </form>
+    </section>
+
+    <footer>
+      © 2025 Chronos — Tous droits réservés.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
